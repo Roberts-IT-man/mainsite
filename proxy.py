@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    return 'Simple Web Proxy is Running! Add a URL parameter like ?url=https://example.com'
+    return 'Searchify Proxy is running. ©TR'
 
 @app.route('/proxy')
 def proxy():
