@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: web-proxy
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python proxy.py"
+    plan: free
+    envVars:
+      - key: PORT
+        value: 8080
